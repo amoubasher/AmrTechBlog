@@ -1,0 +1,13 @@
+<h1>Community Posts</h1>
+{{#if username}}
+<p>Hello, {{username}}</p>
+{{/if}}
+
+<h2 style="margin-left:42%;">All available posts</h2>
+
+
+<div class="col-md-8">
+{{#each posts }}
+{{>posts this }}
+{{/each}}
+</div>
